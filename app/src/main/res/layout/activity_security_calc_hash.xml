@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleSize"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/security_hash_alg_type"
+                android:textColor="@color/colorTextHelp"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/has_alg_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_sha_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SHA_TYPE_1"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sha_type_224"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SHA_TYPE_224"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sha_type_256"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SHA_TYPE_256"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sha_type_384"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SHA_TYPE_384"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sha_type_512"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SHA_TYPE_512"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_sm3_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="HASH_SM3_TYPE"
+                    android:textColor="@color/colorTextContent"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="3840">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edt_data_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="dataIn(Hex)"
+                    android:textColor="@color/colorTextContent"
+                    android:textColorHint="@color/colorTextHelp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/security_calc_result"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="14sp" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/mb_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titleSize"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textAppearance="?android:attr/textAppearanceLargeInverse"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:backgroundTint="@color/colorOrange"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
