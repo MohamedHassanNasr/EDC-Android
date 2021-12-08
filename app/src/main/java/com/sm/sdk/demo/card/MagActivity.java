@@ -89,6 +89,7 @@ public class MagActivity extends BaseAppCompatActivity {
         @Override
         public void findICCard(String atr) throws RemoteException {
             LogUtil.e(Constant.TAG, "findICCard,atr:" + atr);
+            showToast("find icc card module");
         }
 
         @Override

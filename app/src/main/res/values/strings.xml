@@ -266,7 +266,7 @@
     <string name="emv_confirm_cert">Confirm certificate information</string>
     <string name="emv_card_no_error">Get Card info error</string>
     <string name="emv_app_select">Please select app</string>
-    <string name="emv_ic_process">NFC/IC Process</string>
+    <string name="emv_ic_process">NFC/IC Process updated2</string>
     <string name="emv_mag_process">Magnetic Process</string>
     <string name="emv_read_rupay_card">Read Rupay card</string>
     <string name="emv_other">EMV Others</string>
@@ -434,7 +434,7 @@
     <string name="text_mock">I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!I LOVE SUNMI!</string>
     <string name="set_date_time">Set Date&amp;Time</string>
 
-    <string name="text_mock1">I LOVE SUNMI!</string>
+    <string name="text_mock1">I LOVE MTI!</string>e
     <string name="print_repeat_time">Repeat times</string>
     <string name="print_screen_off_wait_time">Waiting time after screen off(Unit:s)</string>
     <string name="print_screen_off_interval">Interval time between 2 print(Unit:s)</string>

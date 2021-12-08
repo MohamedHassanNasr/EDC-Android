@@ -77,11 +77,11 @@ public class MainActivity extends BaseAppCompatActivity {
 
     @Override
     public void onClick(View v) {
-//        if (!MyApplication.app.isConnectPaySDK()) {
-//            MyApplication.app.bindPaySDKService();
-//            showToast(R.string.connect_loading);
-//            return;
-//        }
+        if (!MyApplication.app.isConnectPaySDK()) {
+            MyApplication.app.bindPaySDKService();
+            showToast(R.string.connect_loading);
+            return;
+        }
         final int id = v.getId();
         switch (id) {
             case R.id.card_view_basic:

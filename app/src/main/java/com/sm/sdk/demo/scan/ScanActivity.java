@@ -61,12 +61,10 @@ public class ScanActivity extends BaseAppCompatActivity {
         intent.putExtra("IS_DATA_MATRIX_ENABLE", true); // allow read of DataMatrix code
         PackageManager packageManager = getPackageManager();
 
-        System.out.println("************************************");
-        System.out.println(intent.resolveActivity(packageManager));
-        System.out.println("************************************");
 
         if (intent.resolveActivity(packageManager) != null) {
             startActivityForResult(intent, 100);
+            showToast("--cek Scan---");
         } else {
             showToast(R.string.error_scan);
         }
@@ -79,12 +77,13 @@ public class ScanActivity extends BaseAppCompatActivity {
             @SuppressWarnings("unchecked")
             ArrayList<HashMap<String, String>> result = (ArrayList<HashMap<String, String>>) bundle.getSerializable("data");
             if (result != null && result.size() > 0) {
-                String type = result.get(0).get("TYPE");
-                String value = result.get(0).get("VALUE");
+                String type = result.get(0).get("TYPE");//type dari barcode -> bisa UPC / EAN
+                String value = result.get(0).get("VALUE");//value dari barcode
                 Intent intent = new Intent(this, ScanResultActivity.class);
                 intent.putExtra("type", type);
                 intent.putExtra("value", value);
                 startActivity(intent);
+                showToast("scan success");
             } else {
                 showToast("Scan Failed");
             }

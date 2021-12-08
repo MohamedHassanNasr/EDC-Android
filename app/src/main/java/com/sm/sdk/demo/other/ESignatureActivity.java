@@ -48,7 +48,7 @@ public class ESignatureActivity extends BaseAppCompatActivity {
                     try {
                         Bitmap cacheBitmap = handWriteView.getCacheBitmap();
                         cacheBitmap = BitmapUtils.scale(cacheBitmap, cacheBitmap.getWidth() / 3, cacheBitmap.getHeight() / 3);
-                        cacheBitmap = BitmapUtils.replaceBitmapColor(cacheBitmap, Color.TRANSPARENT, Color.WHITE);
+                        cacheBitmap = BitmapUtils.replaceBitmapColor(cacheBitmap, Color.TRANSPARENT, Color.LTGRAY);
                         if (cacheBitmap.getWidth() > 384) {
                             int newHeight = (int) (1.0 * cacheBitmap.getHeight() * 384 / cacheBitmap.getWidth());
                             cacheBitmap = BitmapUtils.scale(cacheBitmap, 384, newHeight);

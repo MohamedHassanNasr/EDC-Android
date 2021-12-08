@@ -111,6 +111,7 @@ public class CardActivity extends BaseAppCompatActivity {
         switch (id) {
             case R.id.card_mag:
                 openActivity(MagActivity.class);
+                showToast("Choose Magnetic Card!!");
                 break;
             case R.id.card_mag_enc:
                 openActivity(MagEncActivity.class);

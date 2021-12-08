@@ -93,6 +93,7 @@ public class MagProcessActivity extends BaseAppCompatActivity {
                     long parseLong = Long.parseLong(amount);
                     if (parseLong > 0) {
                         checkCard();
+                        showToast("after check card 123");
                     } else {
                         showToast(R.string.card_cost_hint);
                     }
@@ -106,7 +107,8 @@ public class MagProcessActivity extends BaseAppCompatActivity {
 
     private void checkCard() {
         try {
-            showLoadingDialog(R.string.emv_swing_card_mag);
+            showLoadingDialog("swipe please");
+            //showLoadingDialog(R.string.emv_swing_card_mag);
             int cardType = AidlConstantsV2.CardType.MAGNETIC.getValue();
             mReadCardOptV2.checkCard(cardType, mCheckCardCallback, 60);
         } catch (Exception e) {
@@ -127,6 +129,7 @@ public class MagProcessActivity extends BaseAppCompatActivity {
             pinPadConfig.setPinKeyIndex(12);    // pik index
             pinPadConfig.setMaxInput(12);
             pinPadConfig.setMinInput(0);
+            LogUtil.i(Constant.TAG, "inside try");
             mPinPadOptV2.initPinPad(pinPadConfig, mPinPadListener);
         } catch (Exception e) {
             e.printStackTrace();
