@@ -454,6 +454,8 @@
     <string name="send_data">待发送的数据</string>
     <string name="out_log">输出日志</string>
     <string name="send">发送</string>
+    <string name="print_merchant">Print Merchant</string>
+    <string name="print_input">Print Input</string>
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     <string name="scan_camera_scanner">二维码扫码</string>

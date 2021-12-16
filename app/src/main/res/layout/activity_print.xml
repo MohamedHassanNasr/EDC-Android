@@ -33,6 +33,14 @@
             android:id="@+id/print_bitmap"
             layout="@layout/common_item" />
 
+        <include
+            android:id="@+id/print_merchant"
+            layout="@layout/common_item" />
+
+        <include
+            android:id="@+id/print_input"
+            layout="@layout/common_item" />
+
 
     </LinearLayout>
 

@@ -101,6 +101,8 @@
         <activity android:name=".print.PrintTextActivity" />
         <activity android:name=".print.PrintConfigActivity" />
         <activity android:name=".print.PrintBitmapActivity" />
+        <activity android:name=".print.PrintMerchantActivity" />
+        <activity android:name=".print.PrintInput" />
 
         <activity android:name=".scan.ScanActivity" />
         <activity android:name=".scan.ScanResultActivity" />

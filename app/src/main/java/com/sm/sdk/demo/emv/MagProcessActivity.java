@@ -141,6 +141,7 @@ public class MagProcessActivity extends BaseAppCompatActivity {
             try {
                 showLoadingDialog(R.string.requesting);
                 Thread.sleep(1500);
+                LogUtil.i(Constant.TAG, "-----------should be call api or what-----------");
                 showToast(R.string.success);
             } catch (Exception e) {
                 e.printStackTrace();

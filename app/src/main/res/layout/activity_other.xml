@@ -63,6 +63,10 @@
             android:id="@+id/other_setting"
             layout="@layout/common_item" />
 
+        <include
+            android:id="@+id/initialize_test"
+            layout="@layout/common_item" />
+
     </LinearLayout>
 
 </LinearLayout>

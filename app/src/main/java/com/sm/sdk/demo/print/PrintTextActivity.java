@@ -4,6 +4,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Handler.Callback;
@@ -14,6 +16,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.sm.sdk.demo.BaseAppCompatActivity;
 import com.sm.sdk.demo.Constant;
@@ -45,7 +48,7 @@ public class PrintTextActivity extends BaseAppCompatActivity {
     }
 
     private void initView() {
-        btnPrint = findViewById(R.id.btn_print);
+         btnPrint = findViewById(R.id.btn_print);
         btnPrint.setOnClickListener(this);
         etText = findViewById(R.id.et_text);
         etTextSize = findViewById(R.id.et_text_size);

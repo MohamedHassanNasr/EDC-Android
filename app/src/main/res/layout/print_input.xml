@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp">
+
+    <EditText
+        android:id="@+id/textMID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/print_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="MID"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
+        android:id="@+id/textTID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMID"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="TID"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="46dp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/textMerchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTID"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Merchant"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <LinearLayout
+        android:id="@+id/print_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="mid"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+        <TextView
+            android:id="@+id/tid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="tid"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+        <TextView
+            android:id="@+id/merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="merchant"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMerchant"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/button_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMerchant"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="35dp"
+        android:text="Print" />
+
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:layout_below="@+id/button_insert"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

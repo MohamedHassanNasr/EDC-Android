@@ -455,6 +455,8 @@
     <string name="send_data">Send Data</string>
     <string name="out_log">Output Log</string>
     <string name="send">send</string>
+    <string name="print_merchant">Print Merchant</string>
+    <string name="print_input">Print Input</string>
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     <string name="scan_camera_scanner">Camera Scanner</string>

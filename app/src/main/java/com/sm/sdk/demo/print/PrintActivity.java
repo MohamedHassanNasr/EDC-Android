@@ -1,5 +1,7 @@
 package com.sm.sdk.demo.print;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -16,6 +18,7 @@ public class PrintActivity extends BaseAppCompatActivity {
         setContentView(R.layout.activity_print);
         initToolbarBringBack(R.string.print);
         initView();
+
     }
 
     private void initView() {
@@ -33,6 +36,16 @@ public class PrintActivity extends BaseAppCompatActivity {
         leftText = item.findViewById(R.id.left_text);
         leftText.setText(R.string.print_bitmap);
         item.setOnClickListener(this);
+
+        item = this.findViewById(R.id.print_merchant);
+        leftText = item.findViewById(R.id.left_text);
+        leftText.setText(R.string.print_merchant);
+        item.setOnClickListener(this);
+
+        item = this.findViewById(R.id.print_input);
+        leftText = item.findViewById(R.id.left_text);
+        leftText.setText(R.string.print_input);
+        item.setOnClickListener(this);
     }
 
     @Override
@@ -46,6 +59,12 @@ public class PrintActivity extends BaseAppCompatActivity {
                 break;
             case R.id.print_bitmap:
                 openActivity(PrintBitmapActivity.class);
+                break;
+            case R.id.print_merchant:
+                openActivity(PrintMerchantActivity.class);
+                break;
+            case R.id.print_input:
+                openActivity(PrintInput.class);
                 break;
         }
     }
