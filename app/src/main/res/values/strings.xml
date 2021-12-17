@@ -38,6 +38,7 @@
     <string name="basic_led_all_on_new">All on(New)</string>
     <string name="basic_led_all_off_new">All off(New)</string>
     <string name="basic_screen_mode">Set screen exclusive</string>
+    <string name="sale">Sale</string>
 
     <string name="basic_buzzer_time">Buzzer time</string>
     <string name="basic_buzzer_time_delay">delay time (200~10000 ms)</string>

@@ -43,6 +43,11 @@ public class BasicActivity extends BaseAppCompatActivity {
         leftText = item.findViewById(R.id.left_text);
         leftText.setText(R.string.basic_screen_mode);
         item.setOnClickListener(this);
+
+        item = findViewById(R.id.sale);
+        leftText = item.findViewById(R.id.left_text);
+        leftText.setText(R.string.sale);
+        item.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +73,9 @@ public class BasicActivity extends BaseAppCompatActivity {
             case R.id.screen_mode:
                 openActivity(ScreenModelActivity.class);
                 System.out.println("testing4");
+                break;
+            case R.id.sale:
+                openActivity(SaleActivity.class);
                 break;
         }
     }

@@ -41,6 +41,10 @@
             android:id="@+id/screen_mode"
             layout="@layout/common_item" />
 
+        <include
+            android:id="@+id/sale"
+            layout="@layout/common_item" />
+
     </LinearLayout>
 
 </LinearLayout>

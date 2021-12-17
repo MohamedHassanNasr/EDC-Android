@@ -70,6 +70,7 @@
     <string name="basic_hide_nav_all">全部隐藏</string>
     <string name="basic_show_nav_all">全部显示</string>
     <string name="basic_screen_model_hint">屏幕独占\n电源键禁用\n音量键禁用\n系统状态栏禁用\n系统导航栏禁用</string>
+    <string name="sale">Sale</string>
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     <string name="card_test_mag">磁卡测试</string>

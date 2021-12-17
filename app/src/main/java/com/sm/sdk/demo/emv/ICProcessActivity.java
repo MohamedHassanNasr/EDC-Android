@@ -127,6 +127,7 @@ public class ICProcessActivity extends BaseAppCompatActivity {
                 case EMV_CERT_VERIFY:
                     dismissLoadingDialog();
                     mTvShowInfo.setText(mCertInfo);
+                    System.out.println("*******"+mCertInfo+"*******");
                     mBtnOperate.setText(R.string.emv_confirm_cert);
                     break;
                 case EMV_SHOW_PIN_PAD:
@@ -528,6 +529,7 @@ public class ICProcessActivity extends BaseAppCompatActivity {
             }
             LogUtil.e(Constant.TAG, "onCertVerify certType:" + certType + " certInfo:" + certInfo);
             mCertInfo = certInfo;
+            System.out.println("inside onCert call_func()");
             mProcessStep = EMV_CERT_VERIFY;
             mHandler.obtainMessage(EMV_CERT_VERIFY).sendToTarget();
         }
